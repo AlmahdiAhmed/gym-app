@@ -4,6 +4,7 @@ import "react-multi-carousel/lib/styles.css";
 import { blogs } from "@/data";
 import Link from "next/link";
 import Image from "next/image";
+import bench from "../../public/bench.jpg";
 const Featured = () => {
   const featured = blogs.filter((blog) => blog.featured === "true");
   const responsive = {
@@ -40,10 +41,9 @@ const Featured = () => {
                   <div className="relative w-full h-full">
                     <Image
                       src={img}
-                      width={200}
-                      height={200}
+                      fill
                       alt="image"
-                      className="rounded-xl object-cover object-center h-auto w-auto"
+                      className="rounded-xl object-cover h-auto w-auto"
                     />
                   </div>
                   <div className="absolute p-1 rounded-sm bottom-2 left-2 text-[#F05D5E]">

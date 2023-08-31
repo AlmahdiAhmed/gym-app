@@ -10,7 +10,7 @@ const page = ({ params }) => {
       <div className="mt-3 bg-[#e7eced] rounded-xl p-5">
         <div className="relative w-full h-[250px] sm:h-[270px] border border-[#D8A47F] rounded-xl">
           <Image
-            src={"/bench.jpg"}
+            src={newBlog.img}
             alt={newBlog.title}
             fill
             className="object-cover rounded-xl"
