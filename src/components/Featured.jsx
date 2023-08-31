@@ -4,7 +4,6 @@ import "react-multi-carousel/lib/styles.css";
 import { blogs } from "@/data";
 import Link from "next/link";
 import Image from "next/image";
-import bench from "../../public/bench.jpg";
 const Featured = () => {
   const featured = blogs.filter((blog) => blog.featured === "true");
   const responsive = {
